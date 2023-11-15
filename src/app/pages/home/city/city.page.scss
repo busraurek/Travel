@@ -1,0 +1,47 @@
+
+  ion-card{
+    background: rgba(255, 255, 255, 0); 
+    font-size: 16px;
+  
+    ion-card-header{
+        text-align: center;
+        font-size: 30px;
+        color: black;
+      
+    }
+   
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .card{
+   margin-left: 100px;
+  color: #fff;
+  }
+
+
+  .card-swipper{
+ background-color: #fff;
+ text-align: center;   
+  }
+
+
+  img{
+    height: 180px;
+  }
+  
+  .swiper{
+    margin-top: 350px; 
+    width: 100%;
+  }
+
+  .city-name{
+ font-size: 30px;
+
+  }
+  .city-description{
+    font-size: medium;
+  }

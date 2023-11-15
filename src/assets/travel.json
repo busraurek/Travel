@@ -1,0 +1,106 @@
+{
+    "travelsCity": [
+        {
+            "sehir": "İstanbul",
+            "ulke": "Türkiye",
+            "resim": "istanbul.png",
+            "backgroundImage": "istanbul3.jpg",
+            "url": "istanbul",
+            "aciklama": "Tarihi ve kültürel zenginlikleriyle ünlü olan İstanbul, Boğaziçi'nin iki yakasında birçok önemli mekanı barındırır.",
+            "gezilecekYerler": [
+                {
+                    "ad": "Ayasofya",
+                    "aciklama": "Bizans ve Osmanlı mimarisinin harmanlandığı tarihi bir yapı.",
+                    "lat": 41.0082,
+                    "lon": 28.9784,
+                    "resim": "ayasofya.png",
+                    "url": "ayasofya"
+                },
+                {
+                    "ad": "Topkapı Sarayı",
+                    "aciklama": "Osmanlı İmparatorluğu'nun saray kompleksi.",
+                    "lat": 41.0115,
+                    "lon": 28.9834,
+                    "resim": "topkapi.png",
+                    "url": "topkapi"
+                },
+                {
+                    "ad": "Kapalıçarşı",
+                    "aciklama": "Dünyanın en eski kapalı çarşısı.",
+                    "lat": 41.0105,
+                    "lon": 28.9684,
+                    "resim": "kapalicarsi.png",
+                    "url": "kapalicarsi"
+                }
+            ]
+        },
+        {
+            "sehir": "Paris",
+            "ulke": "Fransa",
+            "resim": "paris.png",
+            "backgroundImage": "paris3.jpg",
+            "url": "paris",
+            "aciklama": "Aşk şehri Paris, tarihi ve romantik atmosferi ile ünlüdür. Eiffel Kulesi ve Louvre Müzesi gibi simgesel yerlere ev sahipliği yapar.",
+            "gezilecekYerler": [
+                {
+                    "ad": "Eiffel Kulesi",
+                    "aciklama": "Paris'in sembolü olan demir kule, muazzam bir mimari harika.",
+                    "lat": 48.8588,
+                    "lon": 2.2944,
+                    "resim": "eiffel.png",
+                    "url": "eiffel-tower"
+                },
+                {
+                    "ad": "Louvre Müzesi",
+                    "aciklama": "Dünyanın en büyük sanat müzesi.",
+                    "lat": 48.8610,
+                    "lon": 2.3350,
+                    "resim": "louvre.png",
+                    "url": "louvre"
+                },
+                {
+                    "ad": "Montmartre",
+                    "aciklama": "Sanatçıların ve bohemlerin buluştuğu bölge.",
+                    "lat": 48.8867,
+                    "lon": 2.3431,
+                    "resim": "montmartre.png",
+                    "url": "montmartre"
+                }
+            ]
+        },
+        {
+            "sehir": "Londra",
+            "ulke": "İngiltere",
+            "resim": "london.png",
+            "backgroundImage": "london1.jpg",
+            "url": "londra",
+            "aciklama": "Kültürel çeşitliliği ve tarihi mirası ile öne çıkan Londra, Big Ben ve Tower Bridge gibi önemli yapıları içinde barındırır.",
+            "gezilecekYerler": [
+                {
+                    "ad": "Big Ben",
+                    "aciklama": "Londra'nın simgesi olan saat kulesi.",
+                    "lat": 51.5007,
+                    "lon": -0.1246,
+                    "resim": "bigben.png",
+                    "url": "big-ben"
+                },
+                {
+                    "ad": "Tower Bridge",
+                    "aciklama": "Londra'nın ünlü kaldırılabilir köprüsü.",
+                    "lat": 51.5055,
+                    "lon": -0.0754,
+                    "resim": "towerbridge.png",
+                    "url": "tower-brige"
+                },
+                {
+                    "ad": "British Museum",
+                    "aciklama": "Dünya tarihine ait birçok eserin bulunduğu müze.",
+                    "lat": 51.5194,
+                    "lon": -0.1270,
+                    "resim": "britishmuseum.png",
+                    "url": "british-museum"
+                }
+            ]
+        }
+    ]
+}

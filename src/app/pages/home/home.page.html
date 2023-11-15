@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-card>
+    <div>
+      <h1> TRAVEL GUIDE</h1>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae in delectus numquam quo sed.
+    </p>
+
+
+  </ion-card>
+
+  <swiper-container class="swiper" slideShadows="false" [autoplay]="false" [slidesPerView]="1.6"
+    [slidesOffsetBefore]="5" [grabCursor]="true">
+    <swiper-slide *ngFor="let home of data">
+
+      <ion-card class="card" routerLink="city/{{home.url}}">
+
+        <img src="../../../assets/travel/{{home.resim}}">
+        <h4>{{ home.sehir }}</h4>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+
+</ion-content>
