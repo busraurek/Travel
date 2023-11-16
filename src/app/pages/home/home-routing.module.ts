@@ -10,7 +10,7 @@ const routes: Routes = [
     component: HomePage
   },
   {
-    path: 'city/:cityId',
+    path: ':cityId',
     loadChildren: () => import('./city/city.module').then( m => m.CityPageModule)
   }
 ];

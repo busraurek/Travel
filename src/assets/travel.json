@@ -4,7 +4,7 @@
             "sehir": "İstanbul",
             "ulke": "Türkiye",
             "resim": "istanbul.png",
-            "backgroundImage": "istanbul3.jpg",
+            "backgroundImage": "istanbul4.jpg",
             "url": "istanbul",
             "aciklama": "Tarihi ve kültürel zenginlikleriyle ünlü olan İstanbul, Boğaziçi'nin iki yakasında birçok önemli mekanı barındırır.",
             "gezilecekYerler": [
@@ -38,7 +38,7 @@
             "sehir": "Paris",
             "ulke": "Fransa",
             "resim": "paris.png",
-            "backgroundImage": "paris3.jpg",
+            "backgroundImage": "paris15.jpg",
             "url": "paris",
             "aciklama": "Aşk şehri Paris, tarihi ve romantik atmosferi ile ünlüdür. Eiffel Kulesi ve Louvre Müzesi gibi simgesel yerlere ev sahipliği yapar.",
             "gezilecekYerler": [
@@ -72,7 +72,7 @@
             "sehir": "Londra",
             "ulke": "İngiltere",
             "resim": "london.png",
-            "backgroundImage": "london1.jpg",
+            "backgroundImage": "london4.jpg",
             "url": "londra",
             "aciklama": "Kültürel çeşitliliği ve tarihi mirası ile öne çıkan Londra, Big Ben ve Tower Bridge gibi önemli yapıları içinde barındırır.",
             "gezilecekYerler": [

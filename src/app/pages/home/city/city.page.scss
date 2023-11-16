@@ -2,14 +2,10 @@
   ion-card{
     background: rgba(255, 255, 255, 0); 
     font-size: 16px;
-  
-    ion-card-header{
-        text-align: center;
-        font-size: 30px;
-        color: black;
-      
-    }
-   
+     box-shadow: none;
+     padding: 5px;
+     line-height: 1.5;
+
   }
   .swiper-slide {
     display: flex;
@@ -18,24 +14,33 @@
   }
   
   .card{
-   margin-left: 100px;
+   margin-left: 120px;
   color: #fff;
+  
+
   }
 
 
   .card-swipper{
  background-color: #fff;
  text-align: center;   
+ padding: 20px;
+ border-radius: 10px;
+ color: #232323;
   }
 
 
   img{
-    height: 180px;
+    height: 150px;
+    border-radius: 10px;
   }
   
   .swiper{
-    margin-top: 350px; 
+    position: fixed;
+    bottom: 0;
     width: 100%;
+  
+  
   }
 
   .city-name{

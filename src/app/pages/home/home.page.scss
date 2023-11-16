@@ -1,33 +1,43 @@
 ion-content {
-    --background: url('../../../assets/travel/background8.jpg') no-repeat center center / cover, linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
+    --background: url('../../../assets/travel/background4.jpg') no-repeat center center / cover, linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
   }
   ion-card{
-    background: rgba(255, 255, 255, 0); 
-    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1); 
+    font-size: 18px;
+    box-shadow: none;
+    color: #232323;
+    line-height: 1.5;
+    margin: 15px;
+    text-align: center;
   
     ion-card-header{
         text-align: center;
-        font-size: 30px;
-        color: black;
+        font-size: 50px;
+        color: #232323;
+       
       
     }
   }
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center
-   
-  }
+ 
   .swiper{
-    margin-top: 350px; 
-    width: 100%;
+   
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    
   }
-  .card{
+  .card-swiper{
  background-color: #fff;
-
+ padding: 20px;
+ border-radius: 10px;
  text-align: center;   
+ color: #232323;
   }
   img{
-    height: 180px;
+    height: 150px;
+    border-radius: 10px;
   }
   
+  .custom-marcellus{
+    font-family: 'Marcellus', sans-serif;
+  }

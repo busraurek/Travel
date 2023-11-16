@@ -1,9 +1,8 @@
-<ion-buttons slot="start">
-  <ion-back-button [defaultHref]='homeUrl'></ion-back-button>
-</ion-buttons>
-
 <ion-content
   style="--background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../../assets/travel/{{data?.backgroundImage}}') no-repeat center center / cover;">
+  <ion-buttons>
+    <ion-back-button [defaultHref]='homeUrl' text="" color="light"></ion-back-button>
+  </ion-buttons>
   <ion-card class="card">
     <div class="city-name">
       <p>{{ data?.sehir }} - {{data?.ulke}}</p>
@@ -12,16 +11,12 @@
       <p>{{data?.aciklama}}</p>
     </div>
   </ion-card>
-
-
-
-
   <swiper-container class="swiper" *ngIf="data" #swiper slideShadows="false" [autoplay]="false" [slidesPerView]="1.6"
     [slidesOffsetBefore]="5" [grabCursor]="true">
     <swiper-slide *ngFor="let place of data.gezilecekYerler">
 
-      <ion-card class="card-swipper" routerLink="city-details/{{place.url}}">
-        <ion-img src="assets/travel/{{place.resim}}"></ion-img>
+      <ion-card class="card-swipper" routerLink="{{place.url}}">
+        <img src="assets/travel/{{place.resim}}">
         <h4>{{ place.ad }}</h4>
       </ion-card>
     </swiper-slide>

@@ -9,7 +9,7 @@ const routes: Routes = [
     component: CityPage
   },
   {
-    path: 'city-details/:cityDetailsId',
+    path: ':cityDetailsId',
     loadChildren: () => import('./city-details/city-details.module').then( m => m.CityDetailsPageModule)
   }
   
