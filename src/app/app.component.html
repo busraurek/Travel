@@ -2,6 +2,35 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
+        <ion-menu-toggle>
+
+          <ion-card>
+            <ion-card-header>
+              Travel Guide
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item (click)="navigateToSavedItems()" lines="none">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                Kaydettiklerim
+              </ion-item>
+
+
+            </ion-card-content>
+          </ion-card>
+        </ion-menu-toggle>
+
+        <ion-item lines="none">
+          <ion-img style="width: 30px;" slot="end" [src]="selectedLanguage">
+          </ion-img>
+          <ion-select interface="popover" toggleIcon="" label="{{'seçenek' | translate}}"
+            (ionChange)="changeLanguage($event)">
+            <ion-select-option *ngFor="let option of languageOptions" [value]="option.code">
+
+              <ion-img src="../../assets/flags/de.png"></ion-img>
+              {{ option.name }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
 
       </ion-content>
     </ion-menu>

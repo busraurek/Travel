@@ -1,0 +1,39 @@
+{
+    "HomePage": {
+        "title": "Gezi Rehberi",
+        "text": "  Travel Guide, dünya genelindeki seyahat tutkunlarına kişiselleştirilmiş destinasyon önerileri sunarak unutulmaz keşifler vadeder.",
+        "cityKeys": {
+            "İstanbul": "İstanbul",
+            "Paris": "Paris",
+            "Londra": "Londra"
+        }
+    },
+    "CityPage": {
+        "cityKeys": {
+            "İstanbul": "İstanbul",
+            "Paris": "Paris",
+            "Londra": "Londra"
+        },
+        "countryKeys": {
+            "Türkiye": "Türkiye",
+            "Fransa": "Fransa",
+            "İngiltere": "İngiltere"
+        },
+        "descriptions": {
+            "desc": "Tarihi ve kültürel zenginlikleriyle ünlü olan İstanbul, Boğaziçi'nin iki yakasında birçok önemli mekanı barındırır.",
+            "descc": "Aşk şehri Paris, tarihi ve romantik atmosferi ile ünlüdür. Eiffel Kulesi ve Louvre Müzesi gibi simgesel yerlere ev sahipliği yapar.",
+            "desccc": "Kültürel çeşitliliği ve tarihi mirası ile öne çıkan Londra, Big Ben ve Tower Bridge gibi önemli yapıları içinde barındırır."
+        },
+        "placeKeys": {
+            "Ayasofya": "Ayasofya",
+            "Topkapı Sarayı": "Topkapı Sarayı",
+            "Kapalıçarşı": "Kapalıçarşı",
+            "Eyfel Kulesi": "Eyfel Kulesi",
+            "Louvre Müzesi": "Louvre Müzesi ",
+            "Montmartre": "Montmartre",
+            "Big Ben": "Big Ben",
+            "Tower Bridge": " Tower Bridge",
+            "British Museum": "İngiliz Müzesi"
+        }
+    }
+}

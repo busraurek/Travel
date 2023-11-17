@@ -1,11 +1,10 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      Travel Guide
+      {{'HomePage.title' | translate}}
     </ion-card-header>
     <p>
-      Travel Guide, dünya genelindeki seyahat tutkunlarına kişiselleştirilmiş destinasyon önerileri sunarak
-      unutulmaz keşifler vadeder.
+      {{'HomePage.text' | translate}}
     </p>
   </ion-card>
 
@@ -15,7 +14,7 @@
 
       <ion-card class="card-swiper" routerLink="{{home.url}}">
         <img src="../../../assets/travel/{{home.resim}}">
-        <h4>{{ home.sehir }}</h4>
+        <h4>{{ 'HomePage.cityKeys.' + home.sehir | translate }}</h4>
       </ion-card>
     </swiper-slide>
   </swiper-container>

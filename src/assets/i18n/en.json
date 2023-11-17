@@ -1,0 +1,39 @@
+{
+    "HomePage": {
+        "title": "Travel Guide",
+        "text": "Travel Guide promises unforgettable discoveries by providing personalized destination recommendations to travel enthusiasts around the world.",
+        "cityKeys": {
+            "İstanbul": "Istanbul",
+            "Paris": "Paris",
+            "Londra": "London"
+        }
+    },
+    "CityPage": {
+        "cityKeys": {
+            "İstanbul": "Istanbul",
+            "Paris": "Paris",
+            "Londra": "London"
+        },
+        "countryKeys": {
+            "Türkiye": "Turkey",
+            "Fransa": "France",
+            "İngiltere": "England"
+        },
+        "descriptions": {
+            "desc": "Istanbul is famous for its historical and cultural richness. It hosts many significant landmarks on both sides of the Bosphorus.",
+            "descc": "The city of love, Paris, is famous for its historical and romantic atmosphere. It is home to iconic places like the Eiffel Tower and the Louvre Museum.",
+            "desccc": "London, known for its cultural diversity and historical heritage, houses important structures such as Big Ben and the Tower Bridge."
+        },
+        "placeKeys": {
+            "Ayasofya": "Hagia Sophia",
+            "Topkapı Sarayı": "Topkapı Palace",
+            "Kapalıçarşı": "Grand Bazaar",
+            "Eyfel Kulesi": "Eiffel Tower",
+            "Louvre Müzesi": "Louvre Museum",
+            "Montmartre": "Montmartre",
+            "Big Ben": "Big Ben",
+            "Tower Bridge": " Tower Bridge",
+            "British Museum": "British Museum"
+        }
+    }
+}

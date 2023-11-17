@@ -7,7 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { CityPageRoutingModule } from './city-routing.module';
 
 import { CityPage } from './city.page';
-import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+
 
 @NgModule({
   imports: [
@@ -15,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     IonicModule,
     CityPageRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule
+
   ],
   declarations: [CityPage],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]

@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-row>
+    <ion-col size="10">
+      <ion-buttons>
+        <ion-back-button [defaultHref]="" text="" color="dark"></ion-back-button>
+      </ion-buttons>
+    </ion-col>
+    <ion-col size="2">
+      <ion-buttons>
+        <ion-menu-button color="dark"></ion-menu-button>
+      </ion-buttons>
+    </ion-col>
+  </ion-row>
+  <ion-card>
+    <ion-card-header>
+      Kaydedilenler
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item *ngFor="let items of savedItems" lines="none" class="list-item">
+        {{ items.name }}
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

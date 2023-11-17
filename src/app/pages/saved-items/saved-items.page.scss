@@ -1,0 +1,18 @@
+ion-card-header{
+    font-size: 24px;
+}
+ion-card{
+    box-shadow: none;
+    font-size: 16px;
+    --background: #fff;
+}
+ion-item{
+
+    box-shadow: #8a8686;
+    border-radius: 10px;
+    margin: 8px 5px;
+    color: #232323;
+  }
+  ion-content {
+    --background: url('../../../assets/travel/background4.jpg') no-repeat center center / cover, linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
+  }

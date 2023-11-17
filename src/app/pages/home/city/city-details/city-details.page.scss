@@ -1,6 +1,9 @@
 ion-card{
   box-shadow: none;
 }
+ion-content{
+  background: #fff
+}
 .place-name{
     font-size: 30px;
     padding: 5px;
@@ -24,3 +27,4 @@ ion-card{
   .map-container{
     border-radius: 10px;
   }
+  
