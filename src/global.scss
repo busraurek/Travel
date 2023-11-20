@@ -37,4 +37,24 @@
   ion-item{
     font-family: 'Marcellus-Regular', sans-serif;
   }
- 
+ ion-card-content{
+  font-family: 'Marcellus-Regular', sans-serif;
+ }
+ ion-card-header {
+  font-family: 'Marcellus-Regular', sans-serif;
+ }
+ h2{
+  font-family: 'Marcellus-Regular', sans-serif;
+ }
+ ion-select{
+  font-family: 'Marcellus-Regular', sans-serif;
+ }
+ form{
+  font-family: 'Marcellus-Regular', sans-serif;
+ }
+
+ .custom-toast{
+  --background:#2ebb29;
+   --color: #fff;
+   --border-radius: 15px;
+}

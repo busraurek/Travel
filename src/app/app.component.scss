@@ -4,13 +4,20 @@ ion-content{
 ion-card{
   --background:#fff;
   box-shadow: none;
-  font-size: 30px
-
-  
+  font-size: 20px
 }
+ion-card-header{
+  font-size: 30px;
+}
+h1{
+  margin: 20px;
+}
+
 ion-item{
+  --background: linear-gradient(to right, #8FBDD3, #9ecde0);
+  margin:10px;
+  border-radius: 20px;
   font-size: 16px;
-  --background:#fff;
-  --background: rgb(0,0,0, 0.18);
-  border-radius: 10px;
+  
+
 }

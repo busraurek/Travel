@@ -35,5 +35,35 @@
             "Tower Bridge": " Tower Bridge",
             "British Museum": "İngiliz Müzesi"
         }
+    },
+    "CityDetailsPage": {
+        "placeKeys": {
+            "Ayasofya": "Ayasofya",
+            "Topkapı Sarayı": "Topkapı Sarayı",
+            "Kapalıçarşı": "Kapalıçarşı",
+            "Eyfel Kulesi": "Eyfel Kulesi",
+            "Louvre Müzesi": "Louvre Müzesi ",
+            "Montmartre": "Montmartre",
+            "Big Ben": "Big Ben",
+            "Tower Bridge": " Tower Bridge",
+            "British Museum": "İngiliz Müzesi"
+        },
+        "descriptions": {
+            "text1": "Bizans ve Osmanlı mimarisinin harmanlandığı tarihi bir yapı.",
+            "text2": "Osmanlı İmparatorluğu'nun saray kompleksi.",
+            "text3": "Dünyanın en eski kapalı çarşısı.",
+            "text4": "Paris'in sembolü olan demir kule, muazzam bir mimari harika.",
+            "text5": "Dünyanın en büyük sanat müzesi.",
+            "text6": "Sanatçıların ve bohemlerin buluştuğu bölge.",
+            "text7": "Londra'nın simgesi olan saat kulesi.",
+            "text8": "Londra'nın ünlü kaldırılabilir köprüsü.",
+            "text9": "Dünya tarihine ait birçok eserin bulunduğu müze."
+        },
+        "map": "Nasıl Giderim?"
+    },
+    "SidePage": {
+        "title": "Gezi Rehberi",
+        "saved": "Kaydettiklerim",
+        "secenek": "Dil:"
     }
 }

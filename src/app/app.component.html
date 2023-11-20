@@ -1,39 +1,44 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-menu-toggle>
 
-          <ion-card>
-            <ion-card-header>
-              Travel Guide
-            </ion-card-header>
-            <ion-card-content>
-              <ion-item (click)="navigateToSavedItems()" lines="none">
-                <ion-icon name="bookmark-outline"></ion-icon>
-                Kaydettiklerim
-              </ion-item>
+  <ion-menu contentId="main-content" type="overlay" menuId="MenuId">
+    <ion-content>
+      <img src="../assets/travel/wave (3).svg">
+      <ion-card-header>
+        {{'SidePage.title' | translate}}
+      </ion-card-header>
+      <ion-item>
+        <ion-icon name="person-outline" slot="start"> </ion-icon>
 
-
-            </ion-card-content>
-          </ion-card>
-        </ion-menu-toggle>
-
-        <ion-item lines="none">
-          <ion-img style="width: 30px;" slot="end" [src]="selectedLanguage">
-          </ion-img>
-          <ion-select interface="popover" toggleIcon="" label="{{'seçenek' | translate}}"
-            (ionChange)="changeLanguage($event)">
-            <ion-select-option *ngFor="let option of languageOptions" [value]="option.code">
-
-              <ion-img src="../../assets/flags/de.png"></ion-img>
-              {{ option.name }}
-            </ion-select-option>
-          </ion-select>
+        Profilim
+      </ion-item>
+      <ion-menu-toggle>
+        <ion-item (click)="navigateToSavedItems()" lines="none">
+          <ion-icon name="bookmark-outline" slot="start"></ion-icon>
+          {{ 'SidePage.saved' | translate}}
         </ion-item>
+      </ion-menu-toggle>
 
-      </ion-content>
-    </ion-menu>
-    <ion-router-outlet id="main-content"></ion-router-outlet>
-  </ion-split-pane>
+      <ion-item lines="none">
+        <ion-img style="width: 30px;" slot="end" [src]="selectedLanguage">
+        </ion-img>
+        <ion-icon name="chevron-down-outline" slot="start"></ion-icon>
+        <ion-select interface="popover" toggleIcon="" label="{{'SidePage.secenek' | translate}}"
+          (ionChange)="changeLanguage($event)">
+          <ion-select-option *ngFor="let option of languageOptions" [value]="option.code">
+
+            <ion-img src="../../assets/flags/de.png"></ion-img>
+            {{ option.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item (click)="logout()">
+        <ion-icon name="log-out-outline" slot="start"></ion-icon>
+        Logout
+      </ion-item>
+
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
 </ion-app>

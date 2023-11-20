@@ -6,11 +6,11 @@
             "resim": "istanbul.png",
             "backgroundImage": "istanbul4.jpg",
             "url": "istanbul",
-            "aciklama": "Tarihi ve kültürel zenginlikleriyle ünlü olan İstanbul, Boğaziçi'nin iki yakasında birçok önemli mekanı barındırır.",
+            "aciklama": "desc",
             "gezilecekYerler": [
                 {
                     "ad": "Ayasofya",
-                    "aciklama": "Bizans ve Osmanlı mimarisinin harmanlandığı tarihi bir yapı.",
+                    "aciklama": "text1",
                     "lat": 41.0082,
                     "lon": 28.9784,
                     "resim": "ayasofya.png",
@@ -18,7 +18,7 @@
                 },
                 {
                     "ad": "Topkapı Sarayı",
-                    "aciklama": "Osmanlı İmparatorluğu'nun saray kompleksi.",
+                    "aciklama": "text2",
                     "lat": 41.0115,
                     "lon": 28.9834,
                     "resim": "topkapi.png",
@@ -26,7 +26,7 @@
                 },
                 {
                     "ad": "Kapalıçarşı",
-                    "aciklama": "Dünyanın en eski kapalı çarşısı.",
+                    "aciklama": "text3",
                     "lat": 41.0105,
                     "lon": 28.9684,
                     "resim": "kapalicarsi.png",
@@ -40,11 +40,11 @@
             "resim": "paris.png",
             "backgroundImage": "paris15.jpg",
             "url": "paris",
-            "aciklama": "Aşk şehri Paris, tarihi ve romantik atmosferi ile ünlüdür. Eiffel Kulesi ve Louvre Müzesi gibi simgesel yerlere ev sahipliği yapar.",
+            "aciklama": "descc",
             "gezilecekYerler": [
                 {
                     "ad": "Eyfel Kulesi",
-                    "aciklama": "Paris'in sembolü olan demir kule, muazzam bir mimari harika.",
+                    "aciklama": "text4",
                     "lat": 48.8588,
                     "lon": 2.2944,
                     "resim": "eiffel.png",
@@ -52,7 +52,7 @@
                 },
                 {
                     "ad": "Louvre Müzesi",
-                    "aciklama": "Dünyanın en büyük sanat müzesi.",
+                    "aciklama": "text5",
                     "lat": 48.8610,
                     "lon": 2.3350,
                     "resim": "louvre.png",
@@ -60,7 +60,7 @@
                 },
                 {
                     "ad": "Montmartre",
-                    "aciklama": "Sanatçıların ve bohemlerin buluştuğu bölge.",
+                    "aciklama": "text6",
                     "lat": 48.8867,
                     "lon": 2.3431,
                     "resim": "montmartre.png",
@@ -74,11 +74,11 @@
             "resim": "london.png",
             "backgroundImage": "london4.jpg",
             "url": "londra",
-            "aciklama": "Kültürel çeşitliliği ve tarihi mirası ile öne çıkan Londra, Big Ben ve Tower Bridge gibi önemli yapıları içinde barındırır.",
+            "aciklama": "desccc",
             "gezilecekYerler": [
                 {
                     "ad": "Big Ben",
-                    "aciklama": "Londra'nın simgesi olan saat kulesi.",
+                    "aciklama": "text7",
                     "lat": 51.5007,
                     "lon": -0.1246,
                     "resim": "bigben.png",
@@ -86,7 +86,7 @@
                 },
                 {
                     "ad": "Tower Bridge",
-                    "aciklama": "Londra'nın ünlü kaldırılabilir köprüsü.",
+                    "aciklama": "text8",
                     "lat": 51.5055,
                     "lon": -0.0754,
                     "resim": "towerbridge.png",
@@ -94,7 +94,7 @@
                 },
                 {
                     "ad": "British Museum",
-                    "aciklama": "Dünya tarihine ait birçok eserin bulunduğu müze.",
+                    "aciklama": "text9",
                     "lat": 51.5194,
                     "lon": -0.1270,
                     "resim": "britishmuseum.png",

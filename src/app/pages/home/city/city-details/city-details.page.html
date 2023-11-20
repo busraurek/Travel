@@ -17,7 +17,7 @@
     <ion-row>
       <ion-col size="10">
         <div class="place-name">
-          {{ data?.ad }}</div>
+          {{'CityDetailsPage.placeKeys.' +data?.ad | translate}}</div>
       </ion-col>
       <ion-col size="2">
         <div class="save-button-container">
@@ -31,11 +31,11 @@
     </ion-row>
 
     <div class="place-description">
-      <p>{{ data?.aciklama }}</p>
+      <p>{{ 'CityDetailsPage.descriptions.' +data?.aciklama |translate}}</p>
     </div>
     <img src="assets/travel/{{data?.resim}}">
 
-    <p class="label">Nasıl Giderim?</p>
+    <p class="label">{{'CityDetailsPage.map' |translate}}</p>
     <div id="map" class="map-container" style="height: 300px;"></div>
   </ion-card>
 

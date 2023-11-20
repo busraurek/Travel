@@ -35,5 +35,35 @@
             "Tower Bridge": " Tower Bridge",
             "British Museum": "British Museum"
         }
+    },
+    "CityDetailsPage": {
+        "placeKeys": {
+            "Ayasofya": "Hagia Sophia",
+            "Topkapı Sarayı": "Topkapı Palace",
+            "Kapalıçarşı": "Grand Bazaar",
+            "Eyfel Kulesi": "Eiffel Tower",
+            "Louvre Müzesi": "Louvre Museum",
+            "Montmartre": "Montmartre",
+            "Big Ben": "Big Ben",
+            "Tower Bridge": " Tower Bridge",
+            "British Museum": "British Museum"
+        },
+        "descriptions": {
+            "text1": "A historical structure blending Byzantine and Ottoman architecture.",
+            "text2": "The palace complex of the Ottoman Empire.",
+            "text3": "The world's oldest covered bazaar.",
+            "text4": "The iron tower symbolizing Paris, a magnificent architectural marvel.",
+            "text5": "The world's largest art museum.",
+            "text6": "A region where artists and bohemians meet.",
+            "text7": "The iconic clock tower of London.",
+            "text8": "London's famous drawbridge.",
+            "text9": "A museum housing many works from world history."
+        },
+        "map": "How can I go?"
+    },
+    "SidePage": {
+        "title": "Travel Guide",
+        "saved": "My saves",
+        "secenek": "Languages:"
     }
 }
