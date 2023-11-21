@@ -9,9 +9,20 @@ interface SavedItem {
 })
 export class SavedItemsService {
   
-  savedItems: SavedItem[] = [];
+  private savedItems: SavedItem[] = [];
+  private localStorageKey = 'myAppSavedItems';
 
-  constructor() { }
+  constructor() {  
+   this.getFromLocalStorage();
+  }
+  private getFromLocalStorage(): void {
+  const savedItemsFromStorage = localStorage.getItem(this.localStorageKey);
+  if (savedItemsFromStorage) {
+    this.savedItems = JSON.parse(savedItemsFromStorage);
+  } 
+}
+  private saveToLocalStorage(): void {
+    localStorage.setItem(this.localStorageKey, JSON.stringify(this.savedItems));}
 
   saveItem(item: SavedItem) {
     const existingItem = this.savedItems.find(savedItem => savedItem.name === item.name);
@@ -21,6 +32,7 @@ export class SavedItemsService {
     } else {
       existingItem.bookmarked = true;
     }
+    this.saveToLocalStorage();
   }
   toggleBookmark(itemName: string) {
     const existingItem = this.savedItems.find((item) => item.name === itemName);
@@ -30,6 +42,7 @@ export class SavedItemsService {
     } else {
       this.savedItems.push({ name: itemName, bookmarked: true });
     }
+    this.saveToLocalStorage();
   }
 
   unbookmarkItem(itemName: string) {
@@ -38,6 +51,7 @@ export class SavedItemsService {
     if (index !== -1) {
       this.savedItems.splice(index, 1);
     }
+    this.saveToLocalStorage();
   }
 
   getSavedItems() {

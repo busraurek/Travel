@@ -1,4 +1,4 @@
-import { Component, OnInit ,ViewChild,ElementRef } from '@angular/core';
+import { Component, OnInit ,ViewChild,ElementRef,ChangeDetectorRef  } from '@angular/core';
 import { DataService } from '../../../../services/data.service';
 import { ActivatedRoute, Router, } from '@angular/router';
 import * as mapboxgl from 'mapbox-gl';
@@ -16,7 +16,7 @@ import { Subscription } from 'rxjs';
 export class CityDetailsPage implements OnInit {
   private languageChangeSubscription: Subscription;
 
-  isBookmarked: any = undefined;
+  isBookmarked: boolean | undefined;
 
   @ViewChild('swiper')
   swiperRef: ElementRef | undefined;
@@ -30,12 +30,16 @@ export class CityDetailsPage implements OnInit {
   marker: any = new mapboxgl.Marker();
  
 
-  constructor( private dataService: DataService,
-    private activatedRoute: ActivatedRoute,
+  constructor( 
+     private dataService: DataService,
+     private activatedRoute: ActivatedRoute,
      private savedItemsService: SavedItemsService,
      private router :Router,private translate : TranslateService,
-     private translation: TranslationService
-     ) { this.languageChangeSubscription = this.translation.getLanguageChangeObservable().subscribe(() => {
+     private translation: TranslationService,
+     private cdRef: ChangeDetectorRef
+     ) 
+     { 
+      this.languageChangeSubscription = this.translation.getLanguageChangeObservable().subscribe(() => {
       this.updateTranslations();
     }); }
 
@@ -50,6 +54,12 @@ export class CityDetailsPage implements OnInit {
   ngOnDestroy() {
     this.languageChangeSubscription.unsubscribe(); 
   }
+  ngAfterViewInit() {
+    // Bookmark durumunu yükleyebilirsiniz
+    this.loadBookmarkState();
+  }
+ 
+
   initMap() {
     (mapboxgl as any).accessToken = environment.mapboxkey;
     const mapContainer = document.getElementById('map');
@@ -107,6 +117,7 @@ export class CityDetailsPage implements OnInit {
       this.data = cityData.gezilecekYerler.find(
         (place: any) => place.url === this.placeUrl
       )
+      this.loadBookmarkState();
       this.showMap();
     })
   }
@@ -127,13 +138,24 @@ export class CityDetailsPage implements OnInit {
     this.savedItemsService.toggleBookmark(itemName);
 
     this.isBookmarked = !this.isBookmarked;
+
+  
+
+    this.cdRef.detectChanges();
+
     console.log('Toggle Bookmark Clicked');
+    this.cdRef.detectChanges();
     
   }
   private updateTranslations() {
     this.translate.get('HomePage.title').subscribe((title) => {
       this.title = title;
     }); }
-}
 
-// city-details çevirileri kaldıııııııııııııı*************
+    private loadBookmarkState() {
+      if (this.data) {
+        const itemName = this.data.ad;
+        this.isBookmarked = this.savedItemsService.getSavedItems().some(item => item.name === itemName);
+      }
+    }
+}

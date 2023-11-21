@@ -1,10 +1,16 @@
 ion-card-header{
     font-size: 24px;
+    color: #232323;
 }
 ion-card{
     box-shadow: none;
     font-size: 16px;
-    --background: #fff;
+    --background: #fff 
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+  
 }
 ion-item{
 
@@ -14,5 +20,6 @@ ion-item{
     color: #232323;
   }
   ion-content {
-    --background: url('../../../assets/travel/background4.jpg') no-repeat center center / cover, linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 50%);
+    --background: linear-gradient(to bottom, #9dd4ee, #a4d6ce);
+    transition: all 0.5s ease-in-out;
   }

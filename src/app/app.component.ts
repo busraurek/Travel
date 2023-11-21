@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './services/data.service';
 import { register } from 'swiper/element/bundle';
 import { TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router';
+import { Router,NavigationEnd,NavigationStart } from '@angular/router';
 import { TranslationService } from './services/translation.service';
 import { Subscription } from 'rxjs';
 import { MenuController , LoadingController } from '@ionic/angular';
 import { AuthService } from './services/auth.service';
+
 
 register();
 
@@ -17,6 +18,8 @@ register();
 })
 export class AppComponent implements OnInit {
   private languageChangeSubscription: Subscription;
+
+   
   data : any
   title:any
   
@@ -36,6 +39,8 @@ export class AppComponent implements OnInit {
     private authService: AuthService,
     private loadingController: LoadingController
      ) {
+ 
+      
       this.selectedLanguage = 'tr'; 
       this.translation.setLanguage(this.selectedLanguage);
       this.languageChangeSubscription = this.translation.getLanguageChangeObservable().subscribe(() => {
@@ -44,26 +49,29 @@ export class AppComponent implements OnInit {
     }
 
   ngOnInit() {
-    
+ 
     this.updateFlag(this.selectedLanguage);
     this.translation.getDefaultLanguage().subscribe((defaultLang : any)=> {
     this.translation.setLanguage(defaultLang);
     this.updateTranslations(); 
-    this.checkMenuStatus();
-    this.menuController.enable(!this.authService.isAuthenticatedUser(), 'MenuId');
-})
+
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd && event.url == '/login') {
+        this.menuController.enable(false, 'MenuId');
+      }
+    });
+
+  
    
     this.dataService.getData().subscribe(data => {
       this.data = data;
       console.log(this.data);
     });
+})
+
   }
 
-  private checkMenuStatus() {
-
-    const isLoggedIn = this.authService.isAuthenticatedUser();
-    this.menuController.enable(isLoggedIn, 'MenuId');
-  }
+ 
   ngOnDestroy() {
     this.languageChangeSubscription.unsubscribe(); 
   }
@@ -102,13 +110,11 @@ export class AppComponent implements OnInit {
         await this.authService.logout();
         setTimeout(async () => {
           await loading.dismiss();
-          this.menuController.enable(false, 'MenuId');
-          this.router.navigate(['/login'], { replaceUrl: true });
+         
         }, 3000); 
       } catch (error) {
         console.error('Çıkış işlemi sırasında bir hata oluştu.', error);
         await loading.dismiss();
       }
     }
-   
 }

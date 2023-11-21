@@ -1,6 +1,9 @@
 ion-content{
     transition: all 0.5s ease-in-out;
-    --background: linear-gradient(to bottom, #8FBDD3, #567b8b);
+    --background: linear-gradient(to bottom, #9dd4ee, #a4d6ce);
+}
+h2{
+  color: #fff;
 }
 .centered-content {
     display: flex;
@@ -57,7 +60,7 @@ ion-content{
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   
     .input::placeholder {
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.1);
     }
   }
   form h2 {
@@ -73,7 +76,7 @@ ion-content{
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid #fff;
   }
   
   .input-div:after,
@@ -123,7 +126,7 @@ ion-content{
   
   .i ion-icon {
     font-size: 1.5em;
-    color: #d9d9d9;
+    color: #fff;
     transition: 0.3s;
   }
   
@@ -225,7 +228,7 @@ ion-content{
       margin: 0;
       background: rgba(var(--ion-color-light-rgb), 0.3);
       .input::placeholder {
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 1);
       }
     }
   
